@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tema 2 - Task Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Cloud - Tema2</h1>
+      <p>Aplicație cu 3 web services</p>
+    </header>
+
+    <section class="card">
+      <h2>Dashboard</h2>
+      <div class="controls">
+        <input id="cityInput" type="text" value="Bucharest" placeholder="Oraș pentru vreme" />
+        <button id="reloadBtn">Reîncarcă datele</button>
+      </div>
+      <div class="grid-two">
+        <div>
+          <h3>Vreme</h3>
+          <div id="weatherBox" class="output-box">Se încarcă...</div>
+        </div>
+        <div>
+          <h3>Fact random</h3>
+          <div id="factBox" class="output-box">Se încarcă...</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Adaugă task</h2>
+      <div class="controls">
+        <input id="taskTitle" type="text" placeholder="Titlul task-ului" />
+        <label class="checkbox-label">
+          <input id="taskDone" type="checkbox" /> Finalizat
+        </label>
+        <button id="addTaskBtn">Adaugă</button>
+      </div>
+      <div id="formMessage" class="message"></div>
+    </section>
+
+    <section class="card">
+      <div class="section-header">
+        <h2>Task-uri</h2>
+        <div class="controls compact">
+          <button data-filter="all" class="filter-btn active">Toate</button>
+          <button data-filter="open" class="filter-btn">Nefinalizate</button>
+          <button data-filter="done" class="filter-btn">Finalizate</button>
+        </div>
+      </div>
+      <ul id="taskList" class="task-list"></ul>
+    </section>
+
+    <section class="card">
+      <h2>Erori servicii</h2>
+      <pre id="errorBox" class="error-box">Nu există erori.</pre>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

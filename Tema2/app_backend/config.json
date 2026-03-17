@@ -1,0 +1,9 @@
+{
+  "task_service_url": "http://127.0.0.1:8000",
+  "openweather_base_url": "https://api.openweathermap.org/data/2.5/weather",
+  "openweather_api_key": "fea0e700c578db0e4949ea877f26bd6d",
+  "api_ninjas_fact_url": "https://api.api-ninjas.com/v1/facts",
+  "api_ninjas_api_key": "zl6mBUUW6OeyMedDqDf18u7p4D0hufn1J1175fy5",
+  "default_city": "Bucharest",
+  "app_port": 8090
+}
